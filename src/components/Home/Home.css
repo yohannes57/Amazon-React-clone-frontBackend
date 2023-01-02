@@ -1,0 +1,28 @@
+.home_img_img {
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  /* make under layer */
+  margin-bottom: -180px;
+  /* forabout 180 px other over it */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* mask-image make fade the color */
+}
+.home_row {
+  overflow: hidden;
+  display: flex;
+  z-index: 1;
+  /* z-index laye 1means upper -1 means under */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 780px) {
+  .home_row {
+    overflow: hidden;
+    display: grid;
+    z-index: 1;
+    /* z-index laye 1means upper -1 means under */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
